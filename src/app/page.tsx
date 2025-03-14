@@ -1,4 +1,4 @@
-import Spline from "@splinetool/react-spline/next";
+import Carousel from "@/components/carousel/carousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,19 +11,22 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex flex-row justify-center items-center">
-      <div className="w-[300px] h-[300px] overflow-hidden">
-        <div className="w-full h-full transform scale-75">
-          {" "}
-          <Spline scene="https://prod.spline.design/HPCHGeiSnzjVLfJg/scene.splinecode" />
-        </div>
-      </div>
-      <div className="w-[300px] h-[300px] overflow-hidden">
-        <div className="w-full h-full transform scale-75">
-          {" "}
-          <Spline scene="https://prod.spline.design/HPCHGeiSnzjVLfJg/scene.splinecode" />
-        </div>
-      </div>
+    <div>
+      <Carousel />
     </div>
+    // <div className="w-screen h-screen flex flex-row justify-center items-center">
+    //   <div className="w-[300px] h-[300px] overflow-hidden">
+    //     <div className="w-full h-full transform scale-75">
+    //       {" "}
+    //       <Spline scene="https://prod.spline.design/HPCHGeiSnzjVLfJg/scene.splinecode" />
+    //     </div>
+    //   </div>
+    //   <div className="w-[300px] h-[300px] overflow-hidden">
+    //     <div className="w-full h-full transform scale-75">
+    //       {" "}
+    //       <Spline scene="https://prod.spline.design/HPCHGeiSnzjVLfJg/scene.splinecode" />
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
